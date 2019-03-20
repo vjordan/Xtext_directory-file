@@ -1,0 +1,7 @@
+dir "DSLs2018"
+	file "Students.csv"
+	dir "Lesson1"
+		file "CM1.txt"
+		file "TP1.txt"
+	enddir
+enddir

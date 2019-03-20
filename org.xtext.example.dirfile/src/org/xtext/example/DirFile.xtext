@@ -1,0 +1,21 @@
+grammar org.xtext.example.DirFile with org.eclipse.xtext.common.Terminals
+
+generate dirFile "http://www.xtext.org/example/DirFile"
+
+Directory :
+	"dir" name=STRING
+	 	tree+=TYPE_DIR_FILE*
+	"enddir"
+;
+
+File :
+	"file" name=STRING
+;
+
+TYPE_DIR_FILE :
+    Directory | File
+;
+
+FirstDirectory :
+	firstDirectory = Directory
+;
